@@ -4,25 +4,25 @@ Analyzes Python repositories for code quality issues and delivers findings with 
 
 ## What It Does
 
-Point it at a public GitHub repo. It clones, analyzes, and tells you what's wrong — with suggestions for fixing it.
+Point it at a public GitHub repo. It clones, analyzes, and tells you what's wrong  - with suggestions for fixing it.
 
 ```
 $ roastmyrepo https://github.com/user/some-repo
 
-  RoastMyRepo — Analysis Report
+  RoastMyRepo  - Analysis Report
 
   Health Score: 62/100 (Needs Work)
 
-  Naming (medium) — handlers.py:47
+  Naming (medium)  - handlers.py:47
     14 functions named handle_*. Your codebase reads like someone
     explaining their day using only the word "handled."
     Fix: Use names that describe what's actually being handled.
 
-  Security (critical) — config.py:12
+  Security (critical)  - config.py:12
     Hardcoded database password. Bold move.
     Fix: Move credentials to environment variables.
 
-  Dead Code (low) — utils.py:1
+  Dead Code (low)  - utils.py:1
     os imported but never used. It's just sitting there. Watching.
     Fix: Remove unused import: import os
 ```
@@ -102,7 +102,7 @@ curl -X POST http://localhost:8000/analyze \
   -d '{"url": "https://github.com/user/repo"}'
 ```
 
-The API returns the full analysis as JSON. Timeout is 120 seconds — for large repos, use the CLI instead.
+The API returns the full analysis as JSON. Timeout is 120 seconds  - for large repos, use the CLI instead.
 
 Rate limited to 10 requests/minute per IP.
 

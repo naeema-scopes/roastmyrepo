@@ -2,6 +2,8 @@
 
 Analyzes Python repositories for code quality issues and delivers findings with dry, actionable feedback. Available as a CLI tool and REST API.
 
+*This is a portfolio project built to demonstrate Python backend engineering, AST parsing, CLI design, API design, and LLM prompt engineering.*
+
 ## What It Does
 
 Point it at a public GitHub repo. It clones, analyzes, and tells you what's wrong  - with suggestions for fixing it.
